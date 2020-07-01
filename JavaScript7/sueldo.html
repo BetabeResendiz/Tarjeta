@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio6</title>
+        <link rel="short icon" type="./imagenes/logo.png" href="./imagenes/logo.jpg">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <link rel= "stylesheet" href= "./css/menu_des.css" >
+        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    </head>
+    <body>
+        <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">CALCULAR SUELDO</a></li>
+                <li><a href="if.html">IF-else y Case</a></li>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id= "barrita">
+      <div class= " toggle-btn">
+        <span> &#9776; </span>
+      </div>
+        <ul>
+            <li>
+                <img src= "./imagenes/logo.jpg" alt= "Logo Fazt" class="avatar">
+            </li>
+             <li><p>
+                Correo electrónico:
+        <input type="text" name="Usuarios" placeholder="&#128272; Usuario">
+            </p></li>
+            <li><p>
+                Contraseña:
+        <input type="password" name="clave" placeholder="&#128272; Contraseña">
+            </p></li>
+            <input type="submit" value="Enviar" href="contacto.html" onclick="blue()" >
+        </ul>
+    </div>
+    <script type="text/javascript">
+            var sueldo=40000;
+            var por;
+            var aumento;
+            var tiemp;
+
+            tiemp=parseInt(prompt("Cuantos años llevas trabajando?"));
+
+            if(tiemp>10){
+                por=10;
+            }
+            else{
+                if(tiemp>5){
+                    por=7;
+                }
+                else{
+                    if(tiemp>3){
+                        por=5;
+
+                    }
+                    else{
+                        por=3;
+                    }
+                }
+            }
+
+            aumento=(sueldo/100)*por;
+            sueldo=sueldo+aumento;
+            document.write("Tu aumento es de "+por+"%");
+            document.write("Se aumentan "+aumento+" euros a tu sueldo");
+            document.write("Tu sueldo ahora es de "+sueldo);
+        </script>
+     <script src= "./js/menu.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bienvenido</title>
+    <link rel="short icon" type="./imagenes/logo.png" href="./imagenes/logo.jpg">
+    <link rel= "stylesheet" href= "./css/menu_des.css" >
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+</head>
+    <body>
+        <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">SUMAS</a></li>
+                <li><a href="index.html">Inicio</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id= "barrita">
+      <div class= " toggle-btn">
+        <span> &#9776; </span>
+      </div>
+        <ul>
+            <li>
+                <img src= "./imagenes/logo.jpg" alt= "Logo Fazt" class="avatar">
+            </li>
+             <li><p>
+                Correo electrónico:
+        <input type="text" name="Usuarios" placeholder="&#128272; Usuario">
+            </p></li>
+            <li><p>
+                Contraseña:
+        <input type="password" name="clave" placeholder="&#128272; Contraseña">
+            </p></li>
+            <input type="submit" value="Enviar" href="contacto.html" onclick="blue()" >
+        </ul>
+    </div>
+<script type="text/javascript">
+            var num=parseInt(1);
+            var total=parseInt(0);
+            while(num>0)
+            {
+                num=parseInt(prompt("Ingrese un numero mayor a 0"));
+                total=total+num;
+            }
+            alert("Ingresaste un numero menor o igual a 0");
+            document.write("Los numeros que ingresaste: " + num + "El total es:" +total)        
+        </script>
+    <script src= "./js/menu.js"></script>
+    </body>
+</html>

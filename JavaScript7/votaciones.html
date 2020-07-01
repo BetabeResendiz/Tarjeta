@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio2</title>
+        <link rel="short icon" type="./imagenes/logo.png" href="./imagenes/logo.jpg">
+        <link rel= "stylesheet" href= "./css/menu_des.css" >
+        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+        <script type="text/javascript">
+            function verificar(){
+                var region=document.getElementsByName("region");
+                for(i=0;i<=region.length; i++){
+                    if(region[i].checked){
+                        
+                        reg=parseInt(region[i].value);
+                        switch(reg){
+                            case 1:
+                                document.getElementById("negrita").innerHTML="norte";
+                                break;
+                            case 2:
+                                document.getElementById("negrita").innerHTML="centro";
+                                break;
+                            case 3:
+                                document.getElementById("negrita").innerHTML="sur";
+                                break;
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">VOTACIONES</a></li>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id= "barrita">
+      <div class= " toggle-btn">
+        <span> &#9776; </span>
+      </div>
+        <ul>
+            <li>
+                <img src= "./imagenes/logo.jpg" alt= "Logo Fazt" class="avatar">
+            </li>
+             <li><p>
+                Correo electrónico:
+        <input type="text" name="Usuarios" placeholder="&#128272; Usuario">
+            </p></li>
+            <li><p>
+                Contraseña:
+        <input type="password" name="clave" placeholder="&#128272; Contraseña">
+            </p></li>
+            <input type="submit" value="Enviar" href="contacto.html" onclick="blue()" >
+        </ul>
+    </div>
+        <form action="">
+            <p>Selecciona la region</p>
+            <input type="radio" value="1" name="region">Norte<br>
+            <input type="radio" value="2" name="region">Centro<br>
+            <input type="radio" value="3" name="region">Sur<br>  
+
+            <input type="button" value="Enviar"onclick="verificar();">
+        </form>
+         <p>El voto es de la region <bold id="negrita"></bold></p>
+            <script src= "./js/menu.js"></script>
+    </body>
+</html>

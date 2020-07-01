@@ -1,0 +1,43 @@
+body{
+	background: url(../imagenes/fondo.jpg);
+	background-size: cover;
+	min-height: 100%;
+}
+h1{
+	text-align: center;
+	font-size: 2.5rem;
+}
+.contenedor{
+		width:600px;
+		height: 500px;
+		border:solid 1px #FF00FF;
+		padding:10px;
+		margin:10px auto;
+		text-align:left;
+}
+.menor{
+	color: #f3c623;
+	background-color: #10375c;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 300px;
+	height: 100px;
+	font-family: cursive;
+	text-align: center;
+	font-size: 1.5rem;
+
+
+}
+.mayor{
+	color: #10375c;
+	background-color: #f3c623;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-family: cursive;
+	font-size: 1.5rem;
+	width: 300px;
+	height: 100px;
+	text-align: center;
+}

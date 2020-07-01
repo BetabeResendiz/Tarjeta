@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio1</title>
+        <link rel="short icon" type="./imagenes/logo.png" href="./imagenes/logo.jpg">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <link rel= "stylesheet" href= "./css/menu_des.css" >
+        <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+        <link rel="stylesheet" type="text/css" href="./css/articles.css">
+    </head>
+    <body>
+        <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">ARTICLES</a></li>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id= "barrita">
+      <div class= " toggle-btn">
+        <span> &#9776; </span>
+      </div>
+        <ul>
+            <li>
+                <img src= "./imagenes/logo.jpg" alt= "Logo Fazt" class="avatar">
+            </li>
+             <li><p>
+                Correo electrónico:
+        <input type="text" name="Usuarios" placeholder="&#128272; Usuario">
+            </p></li>
+            <li><p>
+                Contraseña:
+        <input type="password" name="clave" placeholder="&#128272; Contraseña">
+            </p></li>
+            <input type="submit" value="Enviar" href="contacto.html" onclick="blue()" >
+        </ul>
+    </div>
+    <script type="text/javascript">
+            var no;
+            no=prompt("Ingresa la cantidad de veces que quieres repetir el article");
+
+            no=parseInt(no);
+
+            if(no<=7){
+                for(var i=1;i<=no;i++){
+                   //document.getElementsByClassName('menor').color= red;
+                    document.write('<article class="menor">Article numero '+i+'</article>');
+                }
+            }
+            else{
+                for(var i=1;i<=no;i++){
+                   //document.getElementsByClassName('menor').color= red;
+                    document.write('<article class="mayor">Article numero '+i+'</article>');
+                }
+            }
+        </script>
+   <script src= "./js/menu.js"></script>       
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arreglos</title>
+	<link rel="short icon" type="./imagenes/logo.png" href="./imagenes/logo.jpg">
+    <link rel= "stylesheet" href= "./css/menu_des.css" >
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+</head>
+<body>
+<header>
+		<nav class="menu">
+			<ul>
+				<li><a href="#">SHIFT</a></li>
+				<li><a href="arreglos.html">Arreglos</a></li>
+				<li><a href="index.html">Inicio</a></li>
+			</ul>
+		</nav>
+	</header>
+<div id= "barrita">
+      <div class= " toggle-btn">
+        <span> &#9776; </span>
+      </div>
+      	<ul>
+        	<li>
+          		<img src= "./imagenes/logo.jpg" alt= "Logo Fazt" class="avatar">
+        	</li>
+        	 <li><p>
+				Correo electrónico:
+        <input type="text" name="Usuarios" placeholder="&#128272; Usuario">
+			</p></li>
+			<li><p>
+				Contraseña:
+        <input type="password" name="clave" placeholder="&#128272; Contraseña">
+			</p></li>
+        	<input type="submit" value="Enviar" href="contacto.html" onclick="blue()" >
+      	</ul>
+    </div>
+<p>Haz clic en el boton para eliminar el primer elemento del array.</p>
+
+<button onclick="myFunction()">Presionar</button>
+
+<p id="demo"></p>
+
+<script>
+var persona = ["Betsabé", " Santiago", " Miguel", " Rosaura", " Israel", "Jairo"];
+document.getElementById("demo").innerHTML = persona;
+
+function myFunction() {
+  persona.shift();
+  document.getElementById("demo").innerHTML = persona;
+}
+</script>
+<script src= "./js/menu.js"></script>
+</body>
+</html>
